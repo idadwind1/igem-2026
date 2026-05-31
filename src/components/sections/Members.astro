@@ -107,10 +107,12 @@ const advisors = [
     font-size: 1.8rem; text-align: center; margin: 2.5rem 0 1.5rem; color: var(--burgundy-light);
   }
   .members-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem; margin-bottom: 1rem;
   }
+  .member-card { width: 260px; }
   .member-card {
     background: var(--card-bg); border-radius: 20px; padding: 1.5rem; text-align: center;
     backdrop-filter: blur(8px); border: 1px solid rgba(107, 45, 45, 0.06);
@@ -127,7 +129,8 @@ const advisors = [
   .member-name { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--burgundy); margin-bottom: 0.3rem; }
   .member-role { font-size: 0.85rem; color: var(--maple-red); font-weight: 500; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
   .member-bio { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
-  .students-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; }
+  .students-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+  .student-card { width: 160px; }
   .student-card {
     background: var(--card-bg); border-radius: 16px; padding: 1.2rem; text-align: center;
     border: 1px solid rgba(107, 45, 45, 0.06); transition: transform 0.2s;
